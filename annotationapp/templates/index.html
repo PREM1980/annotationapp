@@ -1,0 +1,68 @@
+
+<!-- templates/index.html -->
+<html>
+<head>
+<title>Annotation Tool</title>
+
+<!-- JSON data -->
+<!-- JSON data -->
+    <script src="/static/data/annotations.json"></script>
+<!-- CSS Files -->
+<!--<link rel="stylesheet" href="/static/node_modules/jquery-ui-dist/jquery-ui.min.css">-->
+<link rel="stylesheet"
+	href="/static/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/style.css">
+
+<!-- Paper files -->
+<script src="/static/node_modules/paper/dist/paper-full.min.js"
+	charset="utf-8"></script>
+
+<!-- Javascript files -->
+<script src="/static/node_modules/jquery/dist/jquery.min.js"
+	charset="utf-8"></script>
+<!--<script src="/static/node_modules/jquery-ui-dist/jquery-ui.min.js" charset="utf-8"></script>-->
+<script src="/static/node_modules/popper.js/dist/popper.min.js"
+	charset="utf-8"></script>
+<script src="/static/node_modules/bootstrap/dist/js/bootstrap.min.js"
+	charset="utf-8"></script>
+<script src="/static/js/image_scripts.js" charset="utf-8"></script>
+<script src="/static/js/scripts.js" charset="utf-8"></script>
+
+</head>
+<body>
+	<script>
+		
+	</script>
+	<div class="container">
+		<div class="row" id="image-container">
+			<div id="file-widget">
+				<input type="file" id="file-upload" />
+			</div>
+			
+			<div id="file-widget">
+				<input type="file" id="annotation-file-upload" />
+			</div>
+			
+			<!-- <div>
+				<button type="button" class="btn btn-light" id="load-data">Load Annotation Data</button>
+			</div> -->
+			<div>
+				<button type="button" class="btn btn-light" id="save-data">Save Data</button>
+			</div>
+			<div id="image-widget"
+				style="height: 756px; width: 1788px; display:none">
+				<img id="freq-img" src="#" alt="Load frequency image" />
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" >
+			<canvas id="myCanvas" class="canvas-mouse-tracker"></canvas>
+		</div>
+	</div>
+	
+	
+
+
+</body>
+</html>
